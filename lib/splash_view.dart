@@ -15,13 +15,17 @@ class SplashView extends StatelessWidget {
               height: 144,
               width: 144,
             ),
-            SizedBox(height: 100,),
-            Text(
+            const SizedBox(
+              height: 100,
+            ),
+            const Text(
               "Newzler",
               style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 130,),
-            CircularProgressIndicator()
+            const SizedBox(
+              height: 130,
+            ),
+            const CircularProgressIndicator()
           ],
         ),
       ),
