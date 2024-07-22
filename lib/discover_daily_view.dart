@@ -11,11 +11,11 @@ class DiscoverDailyView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Center(child: Image.asset('assets/images/discover.png')),
-          SizedBox(
+          const SizedBox(
             height: 80,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 18.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 18.0),
             child: Text(
               "Discover Daily News",
               style: TextStyle(
@@ -24,9 +24,11 @@ class DiscoverDailyView extends StatelessWidget {
                   color: Color(0xff209CEE)),
             ),
           ),
-          SizedBox(height: 20,),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 18.0),
+          const SizedBox(
+            height: 20,
+          ),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 18.0),
             child: Text(
               "We bring you closer to the news.",
               style: TextStyle(
@@ -35,18 +37,19 @@ class DiscoverDailyView extends StatelessWidget {
                   color: Color(0xff1E1A15)),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 18.0),
             child: ElevatedButton(
               onPressed: () {},
-              child: Text(
+              child: const Text(
                 "Get Started",
                 style: TextStyle(color: Colors.white),
               ),
-              style: ElevatedButton.styleFrom(backgroundColor: Color(0xff209CEE)),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color(0xff209CEE)),
             ),
           )
         ],
