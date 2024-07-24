@@ -1,4 +1,5 @@
 import 'package:first_project/discover_daily_view.dart';
+import 'package:first_project/login_view.dart';
 import 'package:first_project/splash_view.dart';
 import 'package:first_project/ternding_news.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:TrendingNewsView(),
+      home:LoginView(),
     );
   }
 }
