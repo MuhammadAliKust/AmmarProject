@@ -1,6 +1,7 @@
 import 'package:first_project/discover_daily_view.dart';
 import 'package:first_project/list_view_demo.dart';
 import 'package:first_project/login_view.dart';
+import 'package:first_project/multi_selection_view.dart';
 import 'package:first_project/single_selection_view.dart';
 import 'package:first_project/splash_view.dart';
 import 'package:first_project/ternding_news.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:SingleSelectionDemo(),
+      home:MultiSelectionDemo(),
     );
   }
 }
