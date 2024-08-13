@@ -20,64 +20,93 @@ class LoginView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "Login",
               style: TextStyle(fontSize: 37, fontWeight: FontWeight.w700),
             ),
-            SizedBox(height: 30,),
-            Text(
+            const SizedBox(
+              height: 30,
+            ),
+            const Text(
               "Using your email or username and password",
               style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w700,
                   color: Color(0xff5A5A5A)),
             ),
-            SizedBox(height: 33,),
-            Text(
+            const SizedBox(
+              height: 33,
+            ),
+            const Text(
               "YOUR EMAIL/USERNAME",
               style: TextStyle(fontWeight: FontWeight.w800, fontSize: 10),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(hintText: 'abc123@example.com'),
             ),
-            SizedBox(height: 26,),
-            Text(
+            const SizedBox(
+              height: 26,
+            ),
+            const Text(
               "YOUR PASSWORD",
               style: TextStyle(fontWeight: FontWeight.w800, fontSize: 10),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                   hintText: 'HD#729HMGKJ~!',
                   suffixIcon: Icon(Icons.remove_red_eye)),
             ),
-            SizedBox(height: 41,),
-            Container(
+            const SizedBox(
+              height: 41,
+            ),
+            SizedBox(
               width: MediaQuery.of(context).size.width,
               child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            title: Text("Message!"),
+                            content: Text("This is test dialog"),
+                            actions: [
+                              TextButton(onPressed: () {
+                                Navigator.pop(context);
+                              }, child: Text("No")),
+                              TextButton(onPressed: () {}, child: Text("Yes")),
+                            ],
+                          );
+                        });
+                  },
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xff209CEE)),
-                  child: Text(
+                      backgroundColor: const Color(0xff209CEE)),
+                  child: const Text(
                     "Login",
                     style: TextStyle(color: Colors.white),
                   )),
             ),
-            SizedBox(height: 60,),
-            Center(
+            const SizedBox(
+              height: 60,
+            ),
+            const Center(
               child: Text(
                 "Forget your password?",
                 style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
               ),
             ),
-            SizedBox(height: 16,),
-            Center(
+            const SizedBox(
+              height: 16,
+            ),
+            const Center(
               child: Text(
                 "Forget your username?",
                 style: TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
               ),
             ),
-            SizedBox(height: 16,),
-            Row(
+            const SizedBox(
+              height: 16,
+            ),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
