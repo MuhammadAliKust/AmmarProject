@@ -1,3 +1,4 @@
+import 'package:first_project/ternding_news.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatelessWidget {
@@ -63,20 +64,7 @@ class LoginView extends StatelessWidget {
               width: MediaQuery.of(context).size.width,
               child: ElevatedButton(
                   onPressed: () {
-                    showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                            title: Text("Message!"),
-                            content: Text("This is test dialog"),
-                            actions: [
-                              TextButton(onPressed: () {
-                                Navigator.pop(context);
-                              }, child: Text("No")),
-                              TextButton(onPressed: () {}, child: Text("Yes")),
-                            ],
-                          );
-                        });
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>TrendingNewsView()));
                   },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xff209CEE)),
