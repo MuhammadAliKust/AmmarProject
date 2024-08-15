@@ -1,3 +1,4 @@
+import 'package:first_project/bottom_sheet.dart';
 import 'package:first_project/discover_daily_view.dart';
 import 'package:first_project/list_view_demo.dart';
 import 'package:first_project/login_view.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:LoginView(),
+      home:BottomSheetView(),
     );
   }
 }
