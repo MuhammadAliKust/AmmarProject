@@ -10,6 +10,8 @@ import 'package:first_project/tabbar.dart';
 import 'package:first_project/ternding_news.dart';
 import 'package:flutter/material.dart';
 
+import 'bottom_bar_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:TabBarViewDemo(),
+      home:BottomBarDemo(),
     );
   }
 }
