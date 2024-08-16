@@ -6,6 +6,7 @@ import 'package:first_project/multi_selection_view.dart';
 import 'package:first_project/page_view.dart';
 import 'package:first_project/single_selection_view.dart';
 import 'package:first_project/splash_view.dart';
+import 'package:first_project/tabbar.dart';
 import 'package:first_project/ternding_news.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:LoginView(),
+      home:TabBarViewDemo(),
     );
   }
 }
